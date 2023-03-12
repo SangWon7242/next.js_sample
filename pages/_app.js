@@ -8,6 +8,7 @@ import createEmotionCache from "../src/createEmotionCache";
 import Head from "next/head";
 import { AppBar, Toolbar } from "@mui/material";
 import ToolbarContent from "./../components/ToolbarContent";
+import "../styles/globals.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -31,7 +32,7 @@ export default function MyApp(props) {
             <ToolbarContent></ToolbarContent>
           </Toolbar>
         </AppBar>
-        
+
         <Toolbar />
         <Component {...pageProps} />
       </ThemeProvider>
